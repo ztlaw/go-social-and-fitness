@@ -3,6 +3,7 @@ const router = express.Router();
 const upload = require("../middleware/multer");
 const postsController = require("../controllers/posts");
 const { ensureAuth, ensureGuest } = require("../middleware/auth");
+const commentController = require("../controllers/comment");
 
 //Post Routes - simplified for now
 router.get("/:id", ensureAuth, postsController.getPost);
@@ -13,6 +14,5 @@ router.put("/likePost/:id", postsController.likePost);
 
 router.delete("/deletePost/:id", postsController.deletePost);
 
-router.post("/createComment/:id", postsController.createPost);
 
 module.exports = router;
