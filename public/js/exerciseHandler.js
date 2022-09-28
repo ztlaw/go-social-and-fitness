@@ -17,28 +17,16 @@ const newWorkout = document.querySelector(".new-workout")
 let workoutType = null;
 let shouldNavigateAway = false;
 
-// async function initExercise() {
-//   let workout;
 
-//   if (location.search.split("=")[1] === undefined) {
-//     // workout = await API.createWorkout()
-//     console.log(workout)
-//   }
-//   if (workout) {
-//     location.search = "?id=" + workout._id;
-//   }
-
-// }
-
-// initExercise();
 
 function handleWorkoutTypeChange(event) {
-  workoutType = event.target.value;
+  workoutType = event.target.value; //workoutType = the value of the exercise type: resistance or cardio
 
-  if (workoutType === "cardio") {
+  if (workoutType === "cardio") { // if you clicked on cardio, this will happen vvv
+    resistanceForm.setAttribute('disabled', "") //the resistance form will disable itself **why is the disbled form still submitting info?**
     cardioForm.classList.remove("d-none");
     resistanceForm.classList.add("d-none");
-  } else if (workoutType === "resistance") {
+  } else if (workoutType === "resistance") { // if clicked on resistance, this will happen vvv
     resistanceForm.classList.remove("d-none");
     cardioForm.classList.add("d-none");
   } else {
@@ -46,13 +34,15 @@ function handleWorkoutTypeChange(event) {
     resistanceForm.classList.add("d-none");
   }
 
-  validateInputs();
+  validateInputs(); // after this, run the validateInputs function
 }
 
 function validateInputs() {
   let isValid = true;
 
   if (workoutType === "resistance") {
+    
+
     if (nameInput.value.trim() === "") {
       isValid = false;
     }
@@ -73,6 +63,8 @@ function validateInputs() {
       isValid = false;
     }
   } else if (workoutType === "cardio") {
+    
+
     if (cardioNameInput.value.trim() === "") {
       isValid = false;
     }
