@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="aqua" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,12 +24,28 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/css/style.css" />
+    
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet"> 
+
+<link type="text/css" href="/public/css/style.css">
+ 
   </head>
-  <body>
+  <body data-theme="aqua">
     <header class="container">
       <div class="text-center">
-        <h1 class=""><a href="/profile">Go! Fitness Tracking and Sharing</a></h1>
-        <span>The all-in-one application to share your fitness journey.</span>
+       <div class="d-flex justify-content-between my-8">
+        <h1 class="title"><a href="/profile">Go! Fitness Tracking and Sharing</a></h1>
+        <a href="/login" class="btn btn-primary"> Login</a>
+      </div>
+
+
+
+
       </div>
     </header>
   </body>
