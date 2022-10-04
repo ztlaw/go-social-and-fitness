@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `ztlaw`, `go-social-and-fitness`, `ztlawcode`, `walt-lungan`, `gmail.com`, `waltlungan`, `project_title`, `project_description`
+<!--Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `ztlaw`, `go-social-and-fitness`, `ztlawcode`, `walt-lungan`, `gmail.com`, `waltlungan`, `project_title`, `project_description` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,6 +96,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+  [Javascript.com]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -241,3 +242,4 @@ Project Link: [https://github.com/ztlaw/go-social-and-fitness](https://github.co
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Javascript.com]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
