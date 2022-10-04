@@ -96,7 +96,7 @@
 
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![Javascript][Javascript.com]]
+* ![Javascript][Javascript.com]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
