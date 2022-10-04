@@ -97,6 +97,7 @@
 * [![React][React.js]][React-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * ![Javascript][Javascript.com]
+* ![Express]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -244,3 +245,4 @@ Project Link: [https://github.com/ztlaw/go-social-and-fitness](https://github.co
 [JQuery-url]: https://jquery.com 
 [Javascript.com]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
 [Javascript-url]: https://javascript.com
+[Express]: https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white
