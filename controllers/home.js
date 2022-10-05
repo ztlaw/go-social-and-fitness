@@ -1,5 +1,17 @@
+const Post = require("../models/Post");
+const User = require("../models/User");
+
 module.exports = {
-  getIndex: (req, res) => {
-    res.render("index.ejs");
+  
+  getIndex: async (req, res) => {
+    try{
+    let posts = await Post.find();
+    let users = await User.find({_id: posts.user});
+    console.log(posts)
+    console.log(users)
+    res.render("index.ejs", {posts: posts, users: users});
+  } catch (err) {
+    console.log(err);
+  }
   },
 };
