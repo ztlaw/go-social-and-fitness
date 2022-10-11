@@ -3,24 +3,26 @@
 <main class="container d-flex justify-content-around flex-column mt-10 align-items-center">
 
     <div class="middle d-flex justify-content-around h-5/6 w-3/4 ">
-    <div class="d-flex justify-content-around flex-column ">
+    <div class="d-flex justify-content-between flex-column ">
         <h1 class="text-5xl"> The all-in-one application to track fitness and share your journey.</h1>
-        <p>Let's start today!</p>
+        <h2 class="text-3xl mt-10">Let's start today!</h2>
         <a href="/signup" class="btn btn-secondary w-5/6">GET STARTED now</a>
         </div>
         <div><img class="object-contain" src='/imgs/running.jpg' alt="Man running on a trail"></div>
        
 </div>
-<div class="mt-10 d-flex flex-column justify-content-between align-items-center">
-    <p>Take a look at what others are doing. </p>
-    <ul class='d-flex flex-row'>
+<div class="mt-20 d-flex flex-column justify-content-between align-items-center">
+    <h1 class="text-5xl">Take a look at what others are doing. </h1>
+    <ul class='mt-10 container d-flex flex-row carousel carousel-center w-3/4 items-start'>
     <% for(var i=0; i<posts.length; i++) {%>
-        <div class="card card-compact w-96 bg-base-100 shadow-xl">
-            <figure><img src="<%= posts[i].image%>" /></figure>
+      <li class="mx-3">
+        <div class="card card-compact w-96 bg-base-100 shadow-xl ">
+            <figure><img class="object-scale-down" src="<%= posts[i].image%>" /></figure>
             <div class="card-body">
                
               <h2 class="card-title"><%= posts[i].title%></h2>
               <p><%= posts[i].caption%></p>
+              <h2>show username</h2>
               <div class="card-actions justify-end">
               </div>
             </div>

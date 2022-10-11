@@ -6,9 +6,9 @@ module.exports = {
   getIndex: async (req, res) => {
     try{
     let posts = await Post.find();
-    let users = await User.find({_id: posts.user});
+    let users = await User.find({});
+   console.log(users)
     console.log(posts)
-    console.log(users)
     res.render("index.ejs", {posts: posts, users: users});
   } catch (err) {
     console.log(err);
